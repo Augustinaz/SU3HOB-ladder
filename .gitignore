@@ -1,0 +1,20 @@
+# build products
+*.o
+*.mod
+/hob
+/test_hob_su3
+/test_hob_su3.out
+/test_hob_su3.chk
+/bench/ladder
+
+# LaTeX intermediates
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+!logs/*.log
+
+# not distributed
+doc/

@@ -1,0 +1,51 @@
+SU3HOB-ladder -- file manifest
+
+  README             this description
+  LICENSE            MIT license
+  MANIFEST           this file
+  Makefile           all / check / bench / clean
+
+  hob_su3.f90        SU(3)-basis HOB engine; isofactors from the U(2)
+                     pseudo-spin ladder (kernel of J+ plus lowering)
+  WignerSymbol.f90   SU(2) Clebsch-Gordan coefficients; bundled unmodified
+                     from https://github.com/0382/WignerSymbol (MIT)
+  tmb_kam.f90        classical Talmi-Moshinsky bracket: the compact expression
+                     of Kamuntavicius et al. (2001), with the 6j, 9j and
+                     Clebsch-Gordan coefficients of Varshalovich et al.;
+                     the independent reference of the validation driver
+  hob.f90            command-line front end
+  test_hob_su3.f90   validation driver
+  test_hob_su3.ref   expected numerical output of the validation driver
+
+  bench/ladder.f90   per-shell timing and orthonormality sweep
+
+  .gitignore         build products, LaTeX intermediates and doc/
+
+  logs/              the measurement logs behind every table of the article:
+    ladder_vs_vcs_E50.log
+        per-shell timings and orthonormality for the two isofactor routes
+        (ladder and VCS), E <= 50.  Tables 2 and 3.
+    ladder_vs_kam01_E32.log
+        per-shell prepare/evaluate times for the ladder route and the
+        classical route tmb_kam, with the largest element-wise deviation
+        between them, E <= 32.  Tables 2 and 3, and the cost fits.
+    cfp_ladder_vs_kam01_E30.log
+        three-particle CFPs: departure of the eigenvalues of Lambda from the
+        exact integers, both routes, E <= 30.  Table 6.
+    shell_totals_and_diag_E50.log
+        per-shell block count, largest block, bracket count sum_L n_L^2,
+        prepare+evaluate time and running total over every block with
+        E <= 50; then the CFP diagonalization time per shell.  The Program
+        summary running time, the diagonalization column of Table 6, and
+        the bracket-count fit of Eq. (17).
+    classical_routes_E30.log
+        the same classical formula evaluated from tabulated binomial
+        coefficients rather than logarithms (the published HOTB C6J route
+        and the variant using Tuzun's x6j_opt), E <= 30.  This is the
+        evidence for Table 5: it is kept because the article contrasts the
+        two tabulations, although neither of those codes is distributed
+        here.
+
+  The derivation of the ladder construction and the accompanying program
+  article are not distributed with the source tree; see the ACCOMPANYING
+  ARTICLE section of README.

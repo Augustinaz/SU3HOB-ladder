@@ -1,0 +1,23 @@
+SU(3)-basis HOB code (arXiv:2501.19131) - validation
+Emax =  8
+
+   d      max|HOB.HOB^T - I|   max|HOB^2 - I|   max|SU3HOB - Kam01|
+          (orthonormality)     (involution)     (classical formula)
+  1.00          1.465494E-14          1.487699E-14          2.575717E-14
+  2.00          1.110223E-14          1.110223E-14          2.282029E-14
+  0.50          1.509903E-14          1.487699E-14          1.865175E-14
+
+alpha0 multiplicities agree with the Racah formula, eq. (38), for all (E, J, L).
+
+S(3) relations at d = 1/3   (P23 = HOB(1/3), P12 = diag((-1)^l1)):
+   E    max|P23^2 - I|   max|(P12.P23)^3 - I|
+    0        0.000000E+00        0.000000E+00
+    1        1.110223E-16        2.220446E-16
+    2        2.220446E-16        4.440892E-16
+    3        4.440892E-16        6.661338E-16
+    4        1.332268E-15        1.554312E-15
+    5        1.443290E-15        1.665335E-15
+    6        1.887379E-15        2.220446E-15
+    7        2.331468E-15        2.664535E-15
+    8        1.443290E-14        1.532108E-14
+
