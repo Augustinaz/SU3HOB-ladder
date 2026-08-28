@@ -1,6 +1,6 @@
 SU3HOB-ladder -- file manifest
 
-  README             this description
+  README.md          this description (GitHub-flavoured Markdown)
   LICENSE            MIT license
   MANIFEST           this file
   Makefile           all / check / bench / clean
@@ -48,4 +48,4 @@ SU3HOB-ladder -- file manifest
 
   The derivation of the ladder construction and the accompanying program
   article are not distributed with the source tree; see the ACCOMPANYING
-  ARTICLE section of README.
+  ARTICLE section of README.md.
