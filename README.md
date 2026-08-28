@@ -144,8 +144,8 @@ The whole `E <= 50` range is reachable; accuracy degrades smoothly.
 ## Accompanying article
 
 > A. Stepšys, S. Mickevičius, D. Germanas,
-> *SU3HOB: a Fortran package for harmonic-oscillator brackets in the SU(3)
-> basis from pseudo-spin ladder operators*.
+> *SU3HOB-ladder: a Fortran package for harmonic-oscillator brackets in the
+> SU(3) basis from pseudo-spin ladder operators*.
 
 It describes the method, compares it against two independent routes to the
 same brackets, and applies it to three-particle coefficients of fractional
