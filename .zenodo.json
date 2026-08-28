@@ -1,0 +1,44 @@
+{
+  "title": "SU3HOB-ladder: harmonic-oscillator brackets in the SU(3) basis from pseudo-spin ladder operators",
+  "upload_type": "software",
+  "license": "MIT",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Stepšys, Augustinas",
+      "affiliation": "Center for Physical Sciences and Technology (FTMC), Vilnius, Lithuania"
+    },
+    {
+      "name": "Mickevičius, Saulius",
+      "affiliation": "HEI Kauno kolegija, Kaunas, Lithuania"
+    },
+    {
+      "name": "Germanas, Darius",
+      "affiliation": "Center for Physical Sciences and Technology (FTMC), Vilnius, Lithuania"
+    }
+  ],
+  "description": "<p>A Fortran 2008 package computing the general Talmi&ndash;Moshinsky harmonic-oscillator transformation brackets for an arbitrary mass-ratio parameter <em>d</em> in the SU(3) basis.</p><p>The SU(3) &sup; SO(3) isofactors are generated internally from the U(2) pseudo-spin ladder operators of the chain U(6) &sup; U(3) &times; U(2): the highest-weight states are the null space of the raising operator, and the remaining members of each multiplet follow by lowering. No SU(3) recoupling machinery, K-matrix or outer-multiplicity resolution is required at any point, and no SU(3) coupling library is needed.</p><p>The isofactors are independent of <em>d</em>, so a block is prepared once and evaluated for any number of mass ratios. Validated over every block with E &le; 50.</p>",
+  "keywords": [
+    "Talmi-Moshinsky brackets",
+    "harmonic oscillator brackets",
+    "SU(3)",
+    "isofactors",
+    "pseudo-spin",
+    "nuclear structure",
+    "Fortran"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.1016/j.nuclphysa.2025.123033",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "arXiv:2501.19131",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-preprint",
+      "scheme": "arxiv"
+    }
+  ]
+}

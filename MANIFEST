@@ -20,6 +20,8 @@ SU3HOB-ladder -- file manifest
   bench/ladder.f90   per-shell timing and orthonormality sweep
 
   .gitignore         build products, LaTeX intermediates and doc/
+  .zenodo.json       archive metadata (title, authors, licence) used by
+                     Zenodo when a release is deposited
 
   logs/              the measurement logs behind every table of the article:
     ladder_vs_vcs_E50.log
